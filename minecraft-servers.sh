@@ -21,9 +21,9 @@ echo "Loading. Minecraft Version $1"
 cd /etc/minecraftserverjars/$1
 if [ "$2" = "nogui" ]
 then
-java -Xmx1024M -Xms1024M -jar $1.jar nogui
+sudo java -Xmx1024M -Xms1024M -jar $1.jar nogui
 else
-java -Xmx1024M -Xms1024M -jar $1.jar
+sudo java -Xmx1024M -Xms1024M -jar $1.jar
 fi
 else
 echo "Error. You may have provided an invalid Minecraft version,or maybe you forgot" 
