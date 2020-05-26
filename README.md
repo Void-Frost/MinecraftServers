@@ -1,6 +1,5 @@
 # MinecraftServers
-Source of Minecraft Server Jars, and scripts, used by a custom installer I made, which is the file titled Install.sh
-For use on Raspberry PI
-# IMPORTANT
-# THIS DOESN'T CURRENTLY WORK
-It is a work in progress, and not in a functional state at the moment.
+An easy, terminal-based frontend for running minecraft servers, up to version 1.8 (more versions will be added)
+tested and working on RPi4, no idea about other models.
+REPORT AN ISSUE PLEASE IF SOMETHING DOESN'T WORK.
+To use, just run the binary as sudo, and then type minecraft-servers -h
