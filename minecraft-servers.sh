@@ -28,7 +28,7 @@ fi
 if [ -f "eula.txt" ]
 then
 sudo rm eula.txt
-sudo echo "eula=true">>eula.txt
+sudo cp /etc/minecraftserverjars/eula.txt eula.txt
 fi
 else
 echo "Error. You may have provided an invalid Minecraft version,or maybe you forgot" 
