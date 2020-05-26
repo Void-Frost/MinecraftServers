@@ -25,6 +25,11 @@ sudo java -Xmx1024M -Xms1024M -jar $1.jar nogui
 else
 sudo java -Xmx1024M -Xms1024M -jar $1.jar
 fi
+if [ -f "eula.txt" ]
+then
+sudo rm eula.txt
+sudo echo "eula=true">>eula.txt
+fi
 else
 echo "Error. You may have provided an invalid Minecraft version,or maybe you forgot" 
 echo "the second argument. Do minecraft-servers -h for syntnax"
